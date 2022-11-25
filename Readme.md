@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Александр Болтенков](https://up.htmlacademy.ru/adaptive/27/user/1876577).
-* Наставник: `Неизвестно`.
+- Студент: [Александр Болтенков](https://up.htmlacademy.ru/adaptive/27/user/1876577).
+- Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
