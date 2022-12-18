@@ -1,0 +1,44 @@
+.promo {
+  font-family: "Oswald", "Arial", sans-serif;
+  min-width: 320px;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/promo/promo-background-cat.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 302px, auto 302px;
+  background-position: center 0, center 0;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 27px 0 20px 0;
+  margin: 0 auto;
+  background-image: url("../../img/promo/promo-box-product.png");
+  background-repeat: no-repeat;
+  background-position: center 167px;
+  background-size: auto;
+  height: 402px;
+}
+
+.promo__header {
+  margin-bottom: 302px;
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.promo__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
