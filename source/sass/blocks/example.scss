@@ -33,4 +33,32 @@
   text-align: center;
 }
 
-.example__results-item {}
+.example__results-item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.example__result-description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.example__result-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.example__costs-example {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
