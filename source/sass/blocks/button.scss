@@ -12,4 +12,31 @@
   background-color: #68B738;
   cursor: pointer;
   border: none;
+  text-align: center;
+}
+
+.button--promo {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 0 7px 0;
+}
+
+.button--product {
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--more-products {
+  padding: 10px 0 10px 0;
+  background-color: #f2f2f2;
+  color: #444;
+  font-size: 16px;
+  line-height: 20px;
+  align-self: stretch;
+}
+
+.button-additional-product {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

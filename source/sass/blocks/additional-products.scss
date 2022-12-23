@@ -1,0 +1,62 @@
+@import "../global/mixins.scss";
+
+.additional-products {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 35px 0;
+}
+
+.additional-products__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.additional-products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+.additional-products__list {
+  @include normalize-list;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 54px;
+}
+
+.additional-product__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+.additional-product__data-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+}
+
+.additional-product__description {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-product__button {
+  display: flex;
+  justify-content: center;
+}
