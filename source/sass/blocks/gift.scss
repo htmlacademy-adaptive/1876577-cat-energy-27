@@ -1,0 +1,28 @@
+.gift {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 58px 61px 43px 58px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/product-card-image/gift.png");
+  background-size: contain contain;
+  background-repeat: no-repeat no-repeat;
+  background-size: auto 289px, auto 289px;
+}
+
+.gift__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/product-card-image/icon_gift.svg");
+  }
+}
