@@ -1,11 +1,23 @@
+@import "../global/variables.scss";
+
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: #FFFFFF;
+  }
 }
 
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 708px;
+  }
 }
 
 .example__title {
@@ -16,11 +28,31 @@
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__results-wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .example__results-list {

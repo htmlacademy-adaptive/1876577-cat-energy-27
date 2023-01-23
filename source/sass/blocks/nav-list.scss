@@ -1,0 +1,19 @@
+@import "../global/mixins.scss";
+@import "../global/variables.scss";
+
+.nav-list {
+  @include normalize-list;
+}
+
+.nav-list__link {
+  @media (min-width: $tablet-width) {
+    text-decoration: none;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+}

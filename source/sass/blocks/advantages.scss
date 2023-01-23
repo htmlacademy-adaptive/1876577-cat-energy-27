@@ -1,12 +1,25 @@
 @import "../global/mixins.scss";
+@import "../global/variables.scss";
 
 .advantages {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0;
+  padding-top: 20px;
   margin: 0 auto;
-  padding: 0 0 49px 0;
 }
 
-.advanages__title {
+.advantages__wrapper {
+  margin: 0 auto;
+  padding: 0 20px 49px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    padding: 0 0 90px 0;
+  }
+}
+
+.advantages__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -14,7 +27,13 @@
   line-height: 40px;
   color: #000000;
   margin: 0;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -22,8 +41,19 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    row-gap: 37px;
+  }
 }
 
 .advantages__description {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

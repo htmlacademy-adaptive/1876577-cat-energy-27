@@ -1,0 +1,24 @@
+@import "../global/variables.scss";
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
+}
+
+.navigation__toggle {
+  display: none;
+}
