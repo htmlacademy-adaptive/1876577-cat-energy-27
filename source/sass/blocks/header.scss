@@ -1,19 +1,37 @@
+@import "../global/variables.scss";
+
 .header {
-  display: flex;
-  flex-direction: row;
-  min-width: 320px;
-  justify-content: center;
-}
-
-.header__wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px 17px;
   min-width: 280px;
-  justify-content: space-between;
+  padding: 12px 0 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 769px;
+    max-width: 1220px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0 0 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 53px 0 0;
+  }
 }
 
-.nav__list {
-  display: none;
+.header__logo-wrapper {
+  width: 60%;
+  min-width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    margin-right: auto;
+  }
 }

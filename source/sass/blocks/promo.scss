@@ -1,38 +1,65 @@
+@import "../global/variables.scss";
+
 .promo {
   font-family: "Oswald", "Arial", sans-serif;
   min-width: 320px;
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/promo/promo-background-cat.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/promo-background-cat.png");
   background-repeat: no-repeat, no-repeat;
   background-size: auto 302px, auto 302px;
   background-position: center 0, center 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: #000;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
   width: 280px;
-  padding: 27px 0 20px 0;
+  padding: 27px 0 0;
   margin: 0 auto;
-  background-image: url("../../img/promo/promo-box-product.png");
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url("../img/promo/promo-box-product.png");
   background-repeat: no-repeat;
   background-position: center 167px;
   background-size: auto;
-  height: 402px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    width: 708px;
+    padding: 62px 91px 0 91px;
+    background-image: url("../img/promo/promo-box-product-tablet.png");
+    background-position: center bottom;
+    color: #000;
+    padding: 62px 200px 526px 90px;
+  }
 }
 
 .promo__header {
   margin-bottom: 302px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
+  // text-align: center;
   margin: 0 auto;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__description {
@@ -41,4 +68,10 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }

@@ -1,4 +1,5 @@
 @import "../global/mixins.scss";
+@import "../global/variables.scss";
 
 .form {
   display: flex;
@@ -19,7 +20,13 @@
   margin: 0;
   gap: 14px;
   min-width: 0;
+
+  &--purpose {
+    gap: 16px;
+  }
 }
+
+
 
 .form__control {
   display: flex;
@@ -29,6 +36,15 @@
 
 .form__group--cat .form__control {
   gap: 13px;
+}
+
+.form__group--cat .form__label {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
 }
 
 .form__input[type="text"] {
@@ -41,10 +57,22 @@
   border: none;
   outline: 1px solid #E7E7E7;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+  }
 }
+
 
 .form__group--cat {
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .form__list {
@@ -52,10 +80,24 @@
   flex-direction: column;
   gap: 13px;
   @include normalize-list;
+}
+
+.form__list--purpose {
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 309px 25px 27px;
+    outline: 1px solid #E7E7E7;
+    margin-bottom: 75px;
+  }
+}
+
+.form__list--purpose .form__control {
+  gap: 15px;
 }
 
 .form__title {
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
@@ -67,6 +109,13 @@
 
 .form__group--owner-cat .form__title {
   margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__controls-owner-cat-wrapper {
@@ -76,8 +125,8 @@
 }
 
 .form__input[type="text"],
-[type="email"],
-[type="tel"] {
+.form__input[type="email"],
+.form__input[type="tel"] {
   margin: 0;
   padding: 0;
   display: flex;

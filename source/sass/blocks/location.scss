@@ -1,20 +1,11 @@
+@import "../global/variables.scss";
+
 .location__contacts {
   display: flex;
-  flex-direction: row;
   gap: 2px;
-  padding: 26px 20px;
-}
+  margin: 0 auto;
 
-.location__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  margin: 0;
-  min-width: 139px;
-}
-
-.location--alt-bg {
-  background-color: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
