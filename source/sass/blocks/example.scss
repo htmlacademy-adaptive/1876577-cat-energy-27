@@ -4,7 +4,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
 
@@ -17,6 +17,11 @@
     font-size: 60px;
     line-height: 60px;
     width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0;
   }
 }
 
@@ -32,8 +37,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
   }
-
 }
 
 .example__text {
@@ -41,28 +48,48 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 432px;
+  }
 }
 
+
 .example__results-wrapper {
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 366px 1fr;
+    align-items: center;
+    margin-bottom: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+    margin: 0;
+    margin-bottom: 75px;
   }
 }
 
 .example__results-list {
-  margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0 0 34px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__results-item {
@@ -84,13 +111,30 @@
   color: #000000;
 }
 
-.example__costs-example {
+.example__price-wrapper {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #000;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    max-width: 180px;
+    justify-self: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 371px;
+    display: flex;
+    margin-right: 0;
+    gap: 63px;
+  }
 }

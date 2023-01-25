@@ -11,15 +11,25 @@
   background-position: center 0, center 0;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    max-width: 769px;
+    padding: 0 20px;
     background-image: none;
-    color: #000;
+    color: #000000;
+    margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 1220px;
+  }
+
 }
 
 .promo__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 280px;
   padding: 27px 0 0;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -31,12 +41,33 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    width: 708px;
-    padding: 62px 91px 0 91px;
+    max-width: 708px;
     background-image: url("../img/promo/promo-box-product-tablet.png");
     background-position: center bottom;
-    color: #000;
-    padding: 62px 200px 526px 90px;
+    color: #000000;
+    margin: 0;
+    padding: 60px 200px 526px 118px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/promo/promo-box-product-desktop.png");
+    background-position: 448px 32px;
+    box-sizing: border-box;
+    max-width: 1220px;
+    padding: 111px 720px 267px 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: -95px;
+      right: -158px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/promo-background-cat-desktop.png");
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto 694px, auto 694px;
+      z-index: -1;
+    }
   }
 }
 
@@ -52,13 +83,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  // text-align: center;
   margin: 0 auto;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 41px;
   }
 }
 
@@ -73,5 +104,4 @@
     font-size: 20px;
     line-height: 20px;
   }
-
 }

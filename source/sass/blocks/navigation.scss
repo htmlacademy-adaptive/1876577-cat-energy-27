@@ -3,6 +3,7 @@
 .navigation {
   display: flex;
   align-items: center;
+
 }
 
 .navigation__list {
@@ -16,6 +17,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 478px;
   }
 }
 
