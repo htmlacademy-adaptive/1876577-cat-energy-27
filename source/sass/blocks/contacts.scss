@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding: 62px 41px 60px;
+    padding: 56px 70px;
     grid-template-columns: 175px 160px;
     gap: 290px;
   }
@@ -27,10 +27,11 @@
     width: 565px;
     max-height: 250px;
     overflow: auto;
-    padding: 56px 60px 56px 80px;
+    padding: 56px 80px 56px 80px;
     grid-template-columns: 163px 175px;
     gap: 87px;
     background-color: #fff;
+    overflow: hidden;
   }
 }
 

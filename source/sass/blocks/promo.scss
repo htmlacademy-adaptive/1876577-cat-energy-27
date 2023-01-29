@@ -46,7 +46,7 @@
     background-position: center bottom;
     color: #000000;
     margin: 0;
-    padding: 60px 200px 526px 118px;
+    padding: 60px 195px 526px 118px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,12 +54,12 @@
     background-position: 448px 32px;
     box-sizing: border-box;
     max-width: 1220px;
-    padding: 111px 720px 267px 80px;
+    padding: 111px 682px 267px 80px;
 
     &::after {
       content: "";
       position: absolute;
-      width: 50%;
+      width: 720px;
       height: 694px;
       top: -95px;
       right: -158px;

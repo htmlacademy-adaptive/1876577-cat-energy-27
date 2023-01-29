@@ -25,6 +25,8 @@
     width: 280px;
 
     @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: auto;
       font-size: 20px;
       line-height: 20px;
       padding: 14px 0;

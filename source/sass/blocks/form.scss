@@ -1,6 +1,7 @@
 @import "../global/mixins.scss";
 @import "../global/variables.scss";
 
+
 .form {
   display: flex;
   flex-direction: column;
@@ -8,12 +9,27 @@
   @include normalize-list;
 }
 
+.form__input[type="text"],
+.form__input[type="email"],
+.form__input[type="tel"] {
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  padding: 14px 15px 13px 15px;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  text-transform: uppercase;
+}
+
+.form__input[type="email"] {
+  padding: 14px 15px;
+}
 .form__group {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   border: none;
   display: flex;
   flex-direction: column;
@@ -28,9 +44,25 @@
 }
 
 .form__control {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.form__form-group-cat-and-purpose-wrapper {
+  @media (min-width: $desktop-width){
+    display: grid;
+    grid-template-columns: repeat(2,570px);
+    gap: 80px;
+    margin-bottom: 69px;
+  }
+}
+
+.form__group--cat {
+  @media (min-width: $desktop-width){
+    gap: 20px;
+  }
 }
 
 .form__group--cat .form__control {
@@ -38,6 +70,7 @@
 }
 
 .form__group--cat .form__label {
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -57,10 +90,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
     color: #444444;
+
   }
 }
 
@@ -70,9 +105,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-bottom: 0;
   }
 }
 
+.input--cat {
+  @media (min-width: $tablet-width) {
+   padding: 11px 20px;
+  }
+}
 .form__list {
   display: flex;
   flex-direction: column;
@@ -89,26 +134,47 @@
     outline: 1px solid #e7e7e7;
     margin-bottom: 75px;
   }
+  @media (min-width: $desktop-width){
+    margin-bottom: 0;
+  }
 }
 
 .form__list--purpose .form__control {
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
+
+.form__list--purpose .form__label {
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .form__title {
+  position: relative;
   padding: 0;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
 }
 
 .form__group--owner-cat {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .form__group--owner-cat .form__title {
   margin-bottom: 35px;
-
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -121,19 +187,38 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $desktop-width){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 78px;
+  }
 }
 
-.form__input[type="text"],
-.form__input[type="email"],
-.form__input[type="tel"] {
-  margin: 0;
-  display: flex;
-  flex-grow: 1;
-  overflow: hidden;
-  padding: 14px 20px 13px 20px;
-  border: none;
-  outline: 1px solid #e7e7e7;
+.form__controls-owner-cat-wrapper .form__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.input--owner-cat {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 14px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .input--comment {
@@ -142,6 +227,9 @@
 
 .form__group--owner-cat .form__control {
   gap: 10px;
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form__group--comment {
@@ -149,7 +237,35 @@
 }
 
 .form__group--comment .form__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__group--comment .form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 9px 12px 9px 15px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__group--additional {
@@ -158,10 +274,22 @@
 
 .form__group--additional .form__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__list--additional {
   @include normalize-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 33px 61px;
+  }
 }
 
 .form__list--additional .form__control {
@@ -169,14 +297,41 @@
   gap: 20px;
 }
 
+.form__list--additional .form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+  }
+}
+
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    gap: 64px;
+    align-items: center;
+  }
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 13px 45px;
+    font-size: 20px;
+  }
 }
 
 .form__text {
