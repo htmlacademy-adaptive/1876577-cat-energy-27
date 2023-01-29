@@ -3,11 +3,9 @@
 .navigation {
   display: flex;
   align-items: center;
-
 }
 
 .navigation__list {
-  display: flex;
   align-items: center;
   height: 30px;
   display: none;
@@ -29,4 +27,10 @@
 
 .navigation__toggle {
   display: none;
+}
+
+.nav-list--index-nav-list .nav-list__link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
