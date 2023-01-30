@@ -5,7 +5,9 @@
   min-width: 320px;
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/promo-background-cat.png");
+  /* stylelint-disable unit-no-unknown*/
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/promo/promo-background-cat.png"1x, "../img/promo/promo-background-cat2x.png"2x);
+  /* stylelint-enable unit-no-unknown*/
   background-repeat: no-repeat, no-repeat;
   background-size: auto 302px, auto 302px;
   background-position: center 0, center 0;
@@ -33,7 +35,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
-  background-image: url("../img/promo/promo-box-product.png");
+  background-image: image-set("../img/promo/promo-box-product.png"1x, "../img/promo/promo-box-product2x.png"2x);
   background-repeat: no-repeat;
   background-position: center 167px;
   background-size: auto;
@@ -41,7 +43,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     max-width: 708px;
-    background-image: url("../img/promo/promo-box-product-tablet.png");
+    background-image: image-set("../img/promo/promo-box-product-tablet.png"1x, "../img/promo/promo-box-product-tablet2x.png"2x);
     background-position: center bottom;
     color: #000000;
     margin: 0;
@@ -49,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/promo/promo-box-product-desktop.png");
+    background-image: image-set("../img/promo/promo-box-product-desktop.png"1x, "../img/promo/promo-box-product-desktop2x.png"2x);
     background-position: 448px 32px;
     box-sizing: border-box;
     max-width: 1220px;
@@ -60,9 +62,11 @@
       position: absolute;
       width: 720px;
       height: 694px;
-      top: -95px;
+      top: -118px;
       right: -158px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/promo-background-cat-desktop.png");
+      /* stylelint-disable unit-no-unknown*/
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/promo/promo-background-cat-desktop.png"1x, "../img/promo/promo-background-cat-desktop2x.png"2x);
+      /* stylelint-enable unit-no-unknown*/
       background-repeat: no-repeat, no-repeat;
       background-size: auto 694px, auto 694px;
       z-index: -1;

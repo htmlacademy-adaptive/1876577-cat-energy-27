@@ -1,12 +1,11 @@
 @import "../global/variables.scss";
 
 .header {
-  min-width: 280px;
   max-width: 320px;
   margin: 0 auto;
-  padding: 12px 0 16px;
+  padding: 10px 0 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -25,20 +24,16 @@
 }
 
 .header__logo-wrapper {
-  width: 170px;
+  width: 192px;
   min-width: 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
+  margin-right: 78px;
 
   @media (min-width: $tablet-width) {
     width: 175px;
     margin-right: auto;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 100%;
-  //   margin-right: auto;
-  // }
 }

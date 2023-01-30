@@ -58,4 +58,8 @@
     margin-bottom: 66px;
     padding-right: 225px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+  }
 }

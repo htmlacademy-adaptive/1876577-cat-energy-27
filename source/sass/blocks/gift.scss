@@ -12,6 +12,14 @@
     width: 707px;
     background-size: cover;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 43px 43px 41px;
+    gap: 46px;
+    width: 245px;
+    height: 284px;
+    background-position: center;
+  }
 }
 
 .gift__description {
@@ -42,5 +50,11 @@
       width: 80px;
       height: 82px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }

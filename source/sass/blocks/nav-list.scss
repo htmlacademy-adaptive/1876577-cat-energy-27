@@ -2,22 +2,75 @@
 @import "../global/variables.scss";
 
 .nav-list {
+  position: relative;
+
   @include normalize-list;
 }
 
 .nav-list__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+
+
   @media (min-width: $tablet-width) {
     text-decoration: none;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
-    color: #000000;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.nav-list__item {
+  @media (max-width: $tablet-width) {
+    padding: 29px 0 24px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 100%;
+      height: 1px;
+      top: 0;
+      background-color: #e6e6e6;
+    }
+  }
+}
+
+.nav-list__link--current-index {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    background-color: #ffffff;
+  }
+}
+
+.nav-list__link--current {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    background-color: #68b738;
   }
 }

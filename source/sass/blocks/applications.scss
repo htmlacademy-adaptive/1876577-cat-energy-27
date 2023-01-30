@@ -115,7 +115,13 @@
     margin-bottom: 73px;
 
     &::after {
-      content: none;
+      content: "";
+      position: absolute;
+      width: 71px;
+      height: 97px;
+      left: -144px;
+      top: -34px;
+      background-image: url("../img/cat-desktop.svg");
     }
 
     &::before {
@@ -131,7 +137,7 @@
   }
 }
 
-.application--weight-gain .applications__title {
+.applications-weight-gain .applications__title {
   position: relative;
 
   &::after {
@@ -160,15 +166,19 @@
       top: 57px;
       background-image: url("../img/tiger-tablet.svg");
     }
-
-    &::before {
-      content: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 162px;
+
     &::after {
-      content: none;
+      content: "";
+      position: absolute;
+      height: 57px;
+      width: 135px;
+      left: -179px;
+      top: -9px;
+      background-image: url("../img/tiger-desktop.svg");
     }
   }
 }

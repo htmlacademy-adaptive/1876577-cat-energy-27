@@ -1,5 +1,9 @@
 @import "../global/variables.scss";
 
+.location {
+  position: relative;
+}
+
 .location__contacts {
   display: flex;
   gap: 2px;
@@ -15,7 +19,8 @@
     position: absolute;
     z-index: 3;
     max-width: 1440px;
-    padding: 95px 765px 107px 110px;
+    left: 110px;
+    top: 95px;
   }
 }
 

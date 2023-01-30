@@ -1,14 +1,33 @@
 @import "../global/variables.scss";
+@import "../global/mixins.scss";
 
 .navigation {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .navigation__list {
-  align-items: center;
-  height: 30px;
-  display: none;
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    z-index: 3;
+    width: 320px;
+    right: -18px;
+    top: 57px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -26,7 +45,38 @@
 }
 
 .navigation__toggle {
-  display: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: -8px;
+      width: 24px;
+      height: 2px;
+      padding: 0;
+      margin: 0;
+      z-index: 2;
+      display: block;
+      cursor: pointer;
+      border: none;
+      background-color: #000000;
+      box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+  }
 }
 
 .nav-list--index-nav-list .nav-list__link {
