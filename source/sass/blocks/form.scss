@@ -21,7 +21,7 @@
   overflow: hidden;
   padding: 14px 15px 13px 15px;
   border: none;
-  outline: 1px solid #e7e7e7;
+  outline: 1px solid #cdcdcd;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -225,6 +225,8 @@
 }
 
 .input--comment {
+  border: none;
+  outline: 1px solid #e7e7e7;
   min-height: 150px;
 }
 

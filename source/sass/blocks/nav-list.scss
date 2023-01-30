@@ -72,5 +72,9 @@
     right: 0;
     bottom: -8px;
     background-color: #68b738;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }

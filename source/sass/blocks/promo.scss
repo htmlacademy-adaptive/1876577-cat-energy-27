@@ -60,10 +60,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 720px;
+      width: 50vw;
       height: 694px;
       top: -118px;
-      right: -158px;
+      left: 50%;
       /* stylelint-disable unit-no-unknown*/
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../img/promo/promo-background-cat-desktop.png"1x, "../img/promo/promo-background-cat-desktop2x.png"2x);
       /* stylelint-enable unit-no-unknown*/
