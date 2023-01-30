@@ -1,10 +1,31 @@
 @import "../global/variables.scss";
 
 .example {
+  position: relative;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+  }
+}
+
+.example__wrapper-external {
+  display: flex;
+  padding: 0 115px 0 115px;
+
+  @media (min-width: $desktop-width) {
+    width: 1224px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -14,6 +35,7 @@
   padding: 25px 20px 40px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     width: 708px;
@@ -39,6 +61,10 @@
     line-height: 60px;
     margin-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
@@ -63,7 +89,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 366px 1fr;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 105px;
   }
 
@@ -88,25 +114,79 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+  }
 }
 
 .example__results-item {
+  box-sizing: border-box;
+  width: 44.3%;
+  max-width: 160px;
+  padding: 14.5px 20px 0 22px;
   display: flex;
   flex-direction: column-reverse;
+  gap: 7.5px;
+  outline: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    width: 162px;
+    padding: 15px 16px 0 16px;
+    gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+  }
 }
 
 .example__result-description {
-  font-weight: 400;
+  position: relative;
   font-size: 12px;
+  line-height: 12px;
+  margin-bottom: -14px;
+  padding: 0 5px;
+  background-color: #eaeaea;
+
+  @media (min-width: 340px) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0 2px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: -6px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__result-value {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__price-wrapper {
@@ -134,5 +214,115 @@
     display: flex;
     margin-right: 0;
     gap: 63px;
+  }
+}
+
+
+.example__slider {
+  padding: 20px 0 40px;
+  min-height: 256px;
+  width: 300px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 751px;
+    height: 512px;
+    padding-top: 99px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    padding: 0;
+  }
+}
+
+.example__slider-wrapper {
+  display: flex;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    padding: 0 74px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.example__cat-before-food {
+  width: 50%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(2px, -50%);
+    width: 4px;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: #666666;
+    z-index: 1;
+  }
+}
+
+.example__cat-after-food {
+  width: 50%;
+  overflow: hidden;
+  transform: scale(-1, 1);
+}
+
+.example__cat-before-food-image {
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    transform: translate(-15px);
+  }
+}
+
+.example__cat-after-food-image {
+  height: 100%;
+
+  &--mirrored {
+    transform: scale(-1, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
+.example__slider-curtine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background-image: url("../img/slider-button.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

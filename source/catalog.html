@@ -13,10 +13,18 @@
   <header class="header">
     <div class="header__logo-wrapper">
       <a class="logo" href="index.html">
-        <img src="img/logo/logo.svg" height="37" width="33" alt="логотип кот энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="61" height="50">
+          <img class="header__logo-image logo" src="img/logo/logo.svg" height="37" width="33" alt="логотип кот энерджи">
+        </picture>
       </a>
       <a class="logo" href="index.html">
-        <img src="img/logo/cat-energy-title.svg" height="18" width="101" alt="кот энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/cat-energy-title-desktop.svg" width="118" height="22">
+          <source media="(min-width: 768px)" srcset="img/logo/cat-energy-title-tablet.svg" width="102" height="19">
+          <img src="img/logo/cat-energy-title.svg" height="18" width="101" alt="кот энерджи">
+        </picture>
       </a>
     </div>
 
@@ -26,10 +34,10 @@
       </button>
       <ul class="navigation__list nav-list">
         <li class="nav-list__item">
-          <a class="nav-list__link nav-list__link--current" href="index.html">Главная</a>
+          <a class="nav-list__link" href="index.html">Главная</a>
         </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+          <a class="nav-list__link nav-list__link--current" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="nav-list__item">
           <a class="nav-list__link" href="form.html">Подбор программы</a>
@@ -45,7 +53,10 @@
         <ul class="products__list">
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-chicken-500.png" alt="курица-500грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/chicken/500/500chicken-desktop1@1x.png 1x, img/product-card-image/chicken/500/500chicken-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/chicken/500/500chicken@1x.png" srcset="img/product-card-image/chicken/500/500chicken@1x.png 1x, img/product-card-image/chicken/500/500chicken@2x.png 2x" width="68" height="86" alt="Cat energy pro 500 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy pro 500 г</h3>
@@ -69,7 +80,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-chicken-1000.png" alt="курица-1000грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/chicken/1000/1000chicken-desktop1@1x.png 1x, img/product-card-image/chicken/1000/1000chicken-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/chicken/1000/1000chicken@1x.png" srcset="img/product-card-image/chicken/1000/1000chicken@1x.png 1x, img/product-card-image/chicken/1000/1000chicken@2x.png 2x" width="68" height="86" alt="Cat energy pro 1000 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy pro 1000 г</h3>
@@ -93,7 +107,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-fish-500.png" alt="рыба-500грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/fish/500/500fish-desktop1@1x.png 1x, img/product-card-image/fish/500/500fish-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/fish/500/500fish@1x.png" srcset="img/product-card-image/fish/500/500fish@1x.png 1x, img/product-card-image/fish/500/500fish@2x.png 2x" width="68" height="86" alt="Cat energy pro 500 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy pro 500 г</h3>
@@ -117,7 +134,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-fish-1000.png" alt="рыба-1000грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/fish/1000/1000fish-desktop1@1x.png 1x, img/product-card-image/fish/1000/1000fish-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/fish/1000/1000fish@1x.png" srcset="img/product-card-image/fish/1000/1000fish@1x.png 1x, img/product-card-image/fish/1000/1000fish@2x.png 2x" width="68" height="86" alt="Cat energy pro 1000 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy pro 1000 г</h3>
@@ -141,7 +161,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-buckwheat-500.png" alt="гречневая крупа-500грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/buckwheat/500/500buckwheat-desktop1@1x.png 1x, img/product-card-image/buckwheat/500/500buckwheat-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/buckwheat/500/500buckwheat@1x.png" srcset="img/product-card-image/buckwheat/500/500buckwheat@1x.png 1x, img/product-card-image/buckwheat/500/500buckwheat@2x.png 2x" width="68" height="86" alt="Cat energy pro 500 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy slim 500 г</h3>
@@ -165,7 +188,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-buckwheat-1000.png" alt="гречневая крупа-1000грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/buckwheat/1000/1000buckwheat-desktop1@1x.png 1x, img/product-card-image/buckwheat/1000/1000buckwheat-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/buckwheat/1000/1000fish@1x.png" srcset="img/product-card-image/buckwheat/1000/1000buckwheat@1x.png 1x, img/product-card-image/buckwheat/1000/1000buckwheat@2x.png 2x" width="68" height="86" alt="Cat energy pro 1000 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy slim 1000 г</h3>
@@ -189,7 +215,10 @@
 
           <li class="products__item product-card">
             <a class="product-card__link-image" href="#">
-              <img src="img/product-card-image/product-rice-500.png" alt="рис-500грамм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product-card-image/rice/500/500rice-desktop1@1x.png 1x, img/product-card-image/rice/500/500rice-desktop1@2x.png 2x" width="161" height="172">
+                <img class="product-card__image" src="img/product-card-image/rice/500/500rice@1x.png" srcset="img/product-card-image/rice/500/500rice@1x.png 1x, img/product-card-image/rice/500/500rice@2x.png 2x" width="68" height="86" alt="Cat energy pro 500 г.">
+              </picture>
             </a>
             <a class="product-card__title" href="#">
               <h3 class="product-card__name">Cat energy slim 500 г</h3>
@@ -221,45 +250,47 @@
     <section class="additional-products">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__name">Сахарозаменитель</h3>
-            <dl class="additional-product__data-list">
-              <dt class="additional-product__description">1 упаковка (100 г)</dt>
-              <dd class="additional-product__number">200 ₽</dd>
-            </dl>
-            <a class="additional-product__button button button-additional-product" href="#">заказать</a>
-          </li>
+        <div class="additional-products__inner-wrapper">
+          <ul class="additional-products__list">
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__name">Сахарозаменитель</h3>
+              <dl class="additional-product__data-list">
+                <dt class="additional-product__description">1 упаковка (100 г)</dt>
+                <dd class="additional-product__number">200 ₽</dd>
+              </dl>
+              <a class="additional-product__button button button-additional-product" href="#">заказать</a>
+            </li>
 
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__name">питьевая вода</h3>
-            <dl class="additional-product__data-list">
-              <dt class="additional-product__description">5 литров</dt>
-              <dd class="additional-product__number">50 ₽</dd>
-            </dl>
-            <a class="additional-product__button button button-additional-product" href="#">заказать</a>
-          </li>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__name">питьевая вода</h3>
+              <dl class="additional-product__data-list">
+                <dt class="additional-product__description">5 литров</dt>
+                <dd class="additional-product__number">50 ₽</dd>
+              </dl>
+              <a class="additional-product__button button button-additional-product" href="#">заказать</a>
+            </li>
 
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__name">молоко</h3>
-            <dl class="additional-product__data-list">
-              <dt class="additional-product__description">1 литр</dt>
-              <dd class="additional-product__number">100 ₽</dd>
-            </dl>
-            <a class="additional-product__button button button-additional-product" href="#">заказать</a>
-          </li>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__name">молоко</h3>
+              <dl class="additional-product__data-list">
+                <dt class="additional-product__description">1 литр</dt>
+                <dd class="additional-product__number">100 ₽</dd>
+              </dl>
+              <a class="additional-product__button button button-additional-product" href="#">заказать</a>
+            </li>
 
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__name">витамины</h3>
-            <dl class="additional-product__data-list">
-              <dt class="additional-product__description">1 упаковка (30 г)</dt>
-              <dd class="additional-product__number">300 ₽</dd>
-            </dl>
-            <a class="additional-product__button button button-additional-product" href="#">заказать</a>
-          </li>
-        </ul>
-        <div class="additional-products__gift gift">
-          <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__name">витамины</h3>
+              <dl class="additional-product__data-list">
+                <dt class="additional-product__description">1 упаковка (30 г)</dt>
+                <dd class="additional-product__number">300 ₽</dd>
+              </dl>
+              <a class="additional-product__button button button-additional-product" href="#">заказать</a>
+            </li>
+          </ul>
+          <div class="additional-products__gift gift">
+            <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -274,7 +305,7 @@
       </div>
     </div>
     <div class="location__map-wrapper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 

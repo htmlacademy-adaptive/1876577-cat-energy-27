@@ -2,6 +2,7 @@
 @import "../global/variables.scss";
 
 .advantages {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -11,6 +12,20 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 43px;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -72,8 +87,20 @@
 
 .advantages__item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 40px 7px 57px 0;
@@ -86,10 +113,120 @@
   }
 }
 
+.advantages-usful {
+  position: relative;
+
+  &::before {
+    background-image: url("../img/advantage-usful.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "1";
+      right: 23px;
+      top: 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.advantages-cook {
+  position: relative;
+
+  &::before {
+    background-image: url("../img/advantage-cook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "2";
+      right: 23px;
+      top: 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.advantages-nutrition {
+  position: relative;
+
+  &::before {
+    background-image: url("../img/advantage-nutrition.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "3";
+      right: 23px;
+      top: 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.advantages-time {
+  position: relative;
+
+  &::before {
+    background-image: url("../img/advantage-time.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "4";
+      right: 23px;
+      top: 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+}
+
 .advantages__description {
+  width: 200px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
   }

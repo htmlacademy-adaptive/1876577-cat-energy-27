@@ -13,10 +13,18 @@
   <header class="header">
     <div class="header__logo-wrapper">
       <a class="logo" href="index.html">
-        <img src="img/logo/logo.svg" height="37" width="33" alt="логотип кот энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="70" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="61" height="50">
+          <img class="header__logo-image logo" src="img/logo/logo.svg" height="37" width="33" alt="логотип кот энерджи">
+        </picture>
       </a>
       <a class="logo" href="index.html">
-        <img src="img/logo/cat-energy-title.svg" height="18" width="101" alt="кот энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/cat-energy-title-desktop.svg" width="118" height="22">
+          <source media="(min-width: 768px)" srcset="img/logo/cat-energy-title-tablet.svg" width="102" height="19">
+          <img src="img/logo/cat-energy-title.svg" height="18" width="101" alt="кот энерджи">
+        </picture>
       </a>
     </div>
 
@@ -26,13 +34,13 @@
       </button>
       <ul class="navigation__list nav-list">
         <li class="nav-list__item">
-          <a class="nav-list__link nav-list__link--current" href="index.html">Главная</a>
+          <a class="nav-list__link" href="index.html">Главная</a>
         </li>
         <li class="nav-list__item">
           <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="form.html">Подбор программы</a>
+          <a class="nav-list__link nav-list__link--current" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -66,18 +74,21 @@
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input" type="radio" name="purpose" value="loss" checked>
+                    <span class="form__control-mark form__control-mark--radio"></span>
                     <span class="form__label">Похудение</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input" type="radio" name="purpose" value="gain">
+                    <span class="form__control-mark form__control-mark--radio"></span>
                     <span class="form__label">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
                     <input class="form__input" type="radio" name="purpose" value="advise">
+                    <span class="form__control-mark form__control-mark--radio"></span>
                     <span class="form__label">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
@@ -110,24 +121,28 @@
               <li class="form__item">
                 <label class="form__control">
                   <input class="form__input" type="checkbox" name="sweetener" checked>
+                  <span class="form__control-mark form__control-mark--check"></span>
                   <span class="form__label">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control">
                   <input class="form__input" type="checkbox" name="water">
+                  <span class="form__control-mark form__control-mark--check"></span>
                   <span class="form__label">Питьевая вода</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control">
                   <input class="form__input" type="checkbox" name="milk">
+                  <span class="form__control-mark form__control-mark--check"></span>
                   <span class="form__label">Молоко</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control">
                   <input class="form__input" type="checkbox" name="vitamins">
+                  <span class="form__control-mark form__control-mark--check"></span>
                   <span class="form__label">Витамины</span>
                 </label>
               </li>
@@ -150,7 +165,7 @@
         </div>
       </div>
       <div class="location__map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
