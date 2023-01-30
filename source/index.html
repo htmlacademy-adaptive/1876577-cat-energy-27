@@ -121,8 +121,12 @@
       <div class="example__slider">
         <div class="example__slider-wrapper">
           <div class="example__cat-before-food">
-            <img class="example__cat-before-food-image" src="./img/example-before.png" alt="Как кот выглядит до." width="280" height="256">
-            <span class="visually-hidden">Как кот выглядит до</span>
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-image/before@1x.png 1x, img/cat-image/before@2x.png 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-image/before@1x.png 1x, img/cat-image/before@2x.png 2x" width="280" height="256">
+              <source media="(min-width: 768px)" srcset="img/slider-before-tablet@1x.png 1x, img/slider-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="example__cat-before-food-image" src="img/cat-image/before@1x.png" srcset="img/cat-image/before@1x.png 1x, img/cat-image/before@2x.png 2x" width="280" height="256" alt="Кот Борис до начала питания Cat Energy Slim.">
+            </picture>
           </div>
           <button type="button" class="example__slider-curtine">
             <span class="example__slider-curtine-cricle">
@@ -130,8 +134,12 @@
             </span>
           </button>
           <div class="example__cat-after-food">
-            <img class="example__cat-after-food-image example__cat-after-food-image--mirrored" src="./img/example-after.png" alt="Как кот выглядит после." width="280" height="256">
-            <span class="visually-hidden">Как кот выглядит после</span>
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-image/after@1x.png 1x, img/cat-image/after@2x.png 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-image/after@1x.png 1x, img/cat-image/after@2x.png 2x" width="280" height="256">
+              <source media="(min-width: 768px)" srcset="img/cat-image/after@1x.png 1x, img/slider-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="example__cat-after-food-image example__cat-after-food-image--mirrored" src="img/cat-image/after@1x.png" srcset="img/cat-image/after@1x.png 1x, img/cat-image/after@2x.png 2x" width="280" height="256" alt="Кот Борис до начала питания Cat Energy Slim.">
+            </picture>
           </div>
         </div>
       </div>
@@ -146,7 +154,7 @@
         </div>
       </div>
       <div class="location__map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.5658582130086!2d30.319869794578434!3d59.93869778842007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sge!4v1674987796380!5m2!1sen!2sge" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
